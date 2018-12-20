@@ -1,0 +1,30 @@
+* {
+    background-color: black;
+    color: white;
+}
+#titlePart{
+    background-color: black;
+    text-align: center;
+    font-family: cursive;
+    margin: 30px;
+    opacity: .75;
+    font-size:100px;
+    font-weight: bold;
+    color:khaki;
+    background-image: url("../pictures/tile.jpeg");
+}
+
+.instaimg img{
+    margin-bottom: 30px;
+}
+
+.instaimg img:hover{
+    opacity: 0.5;
+    -moz-opacity:0.8;
+    webkit-opacity:0.8;
+}
+
+body{
+    background-color: black;
+    padding-top: 10px;
+}

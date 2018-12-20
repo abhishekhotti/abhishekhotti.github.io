@@ -1,0 +1,45 @@
+* {
+    background-color: black;
+    color: white;
+}
+#titlePart{
+    text-align: center;
+    font-family: cursive;
+    margin: 30px;
+    opacity: .75;
+    font-size:100px;
+    font-weight: bold;
+    color:khaki;
+    background-image: url("../pictures/tile.jpeg");
+}
+
+tbody img{
+    margin: 20px auto;
+    width: 80%;
+    max-width:640px;
+    max-height:300px;
+}
+
+table {
+    height: 40%;
+    left: 10%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    width: 80%;
+  }
+
+thead th{
+    background: black;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+tbody td{
+    text-align: center;
+}
