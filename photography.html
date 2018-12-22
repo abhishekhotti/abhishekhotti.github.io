@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/magnific.css">
     <link rel="stylesheet" href="./css/photographyStyle.css">
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
     <title>Abhishek Hotti Photography</title>
   </head>
 
@@ -20,39 +21,37 @@
     </div>
     
     <div id="pictures" class="tabcontent">
-        <div class="container">
-            <div id = "instafeed" class = "gallery row"></div>
-          </div>
+      <div class="container">
+          <div id = "instafeed" class = "gallery row"></div>
+        </div>
     </div>
-    
     <div id="contactMe" class="tabcontent">
-        <div class="container">
-            <div style="text-align:center">
-              <h2>Contact Me</h2>
-              <p>Let's go on a shoot!</p><p>I live in the Bay Area, lets go somewhere cool</p>
-            </div>
-            <div class="row">
-              <div class="column">
-                <img src="./pictures/abhi.jpg" style="width:100%">
-              </div>
-              <div class="column">
-                <form action="/action_page.php">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="firstname" placeholder="Your full name is..">
-                  <label for="lname">Email Address</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your email is..">
-                  <label for="country">Location</label>
-                  <input type="text" id="country" name="lastname" placeholder="Where are you located..">
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                  <input type="submit" value="Submit">
-                </form>
-              </div>
-            </div>
+      <div class="container">
+        <div style="text-align:center">
+          <h2>Contact Me</h2>
+          <p>Let's go on a shoot!</p><p>I live in the Bay Area, lets go somewhere cool</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="./pictures/abhi.jpg" style="width:100%">
           </div>
+          <div class="column">
+            <form id = "contactForm">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="firstname" placeholder="Your full name is..." required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your email is..." required>
+              <label for="location">Location</label>
+              <input type="text" id="location" name="location" placeholder="Where are you located..." required>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Tell me what kind of shoot you were planning..." style="height:170px" required></textarea>
+              <input type="submit" value="Submit">
+            </form>
+            <div class = "alert">Your message has been sent. I will contact you back soon</div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    
     
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src = "./js/instafeed.min.js"></script>

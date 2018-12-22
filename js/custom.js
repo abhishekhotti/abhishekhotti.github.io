@@ -1,3 +1,16 @@
+var config = {
+  // Initialize Firebase
+  apiKey: "AIzaSyBNo8sMTrwOxmsSEwAOSbZXaQeJuEP-k7Q",
+  authDomain: "mywebproj-9c068.firebaseapp.com",
+  databaseURL: "https://mywebproj-9c068.firebaseio.com",
+  projectId: "mywebproj-9c068",
+  storageBucket: "mywebproj-9c068.appspot.com",
+  messagingSenderId: "161907183546"
+  };
+firebase.initializeApp(config);
+
+var messageRef = firebase.database().ref('messages');
+
 $(document).ready(function() {
 
     var userFeed = new Instafeed({
@@ -35,3 +48,41 @@ function openTab(evt, cityName) {
   }
 
   document.getElementById("defaultOpen").click();
+
+  document.getElementById('contactForm').addEventListener('submit',submitForm);
+
+  function submitForm(e)
+  {
+    e.preventDefault();
+
+    var name = getInputVal('name');
+    var email = getInputVal('email');
+    var location = getInputVal('location');
+    var subject = getInputVal('subject');
+
+    saveMessage(name, email, location, subject);
+
+    document.querySelector('.alert').style.display = 'block';
+
+    setTimeout(function(){
+      document.querySelector('.alert').style.display = 'none';
+    },3000)
+
+    document.getElementById('contactForm').reset();
+  }
+
+  function getInputVal(id)
+  {
+    return document.getElementById(id).value;
+  }
+
+  function saveMessage(name, email, location, subject)
+  {
+    var newMsgRef = messageRef.push();
+    newMsgRef.set({
+      name: name,
+      email: email,
+      location: location,
+      subject: subject
+    });
+  };
