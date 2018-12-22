@@ -23,7 +23,6 @@
 .instaimg img:hover{
     opacity: 0.5;
     -moz-opacity:0.8;
-    webkit-opacity:0.8;
 }
 
 body{
