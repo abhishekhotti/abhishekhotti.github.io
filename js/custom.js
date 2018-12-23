@@ -1,12 +1,12 @@
+// Initialize Firebase
 var config = {
-  // Initialize Firebase
   apiKey: "AIzaSyBNo8sMTrwOxmsSEwAOSbZXaQeJuEP-k7Q",
   authDomain: "mywebproj-9c068.firebaseapp.com",
   databaseURL: "https://mywebproj-9c068.firebaseio.com",
   projectId: "mywebproj-9c068",
   storageBucket: "mywebproj-9c068.appspot.com",
   messagingSenderId: "161907183546"
-  };
+};
 firebase.initializeApp(config);
 
 var messageRef = firebase.database().ref('messages');
@@ -61,8 +61,6 @@ function openTab(evt, cityName) {
     var subject = getInputVal('subject');
 
     saveMessage(name, email, location, subject);
-
-    document.querySelector('.alert').style.display = 'block';
 
     document.getElementById('contactForm').reset();
   }
