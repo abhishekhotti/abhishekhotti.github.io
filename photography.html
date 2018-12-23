@@ -45,14 +45,24 @@
               <input type="text" id="location" name="location" placeholder="Where are you located..." required>
               <label for="subject">Subject</label>
               <textarea id="subject" name="subject" placeholder="Tell me what kind of shoot you were planning..." style="height:170px" required></textarea>
-              <input type="submit" value="Submit">
             </form>
-            <div class = "alert">Your message has been sent. I will contact you back soon</div>
+            <button id="submissionButton" type="submit" value="Submit">Submit</button>
           </div>
         </div>
       </div>
     </div>
     
+    <!-- Modal Section -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="closeMine">+</div>
+        <p style = "background-color: #45a049; text-align: center">Your message has been sent. I will contact you back soon</p>
+        <a style = "text-align: center" href = "photography.html"><button style = "background-color: #45a049">Go Home!</button></a>
+      </div>
+    
+    </div>
+
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src = "./js/instafeed.min.js"></script>
     <script src = "./js/magnific.min.js"></script>
@@ -60,5 +70,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src = "./js/custom.js"></script>
   </body>
+
 
 </html>

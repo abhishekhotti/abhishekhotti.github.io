@@ -64,10 +64,6 @@ function openTab(evt, cityName) {
 
     document.querySelector('.alert').style.display = 'block';
 
-    setTimeout(function(){
-      document.querySelector('.alert').style.display = 'none';
-    },3000)
-
     document.getElementById('contactForm').reset();
   }
 
@@ -86,3 +82,29 @@ function openTab(evt, cityName) {
       subject: subject
     });
   };
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("submissionButton");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeMine")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
