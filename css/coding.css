@@ -70,6 +70,7 @@ body{
   
   .contain{
     text-align: center;
+    padding-top:15px;
 }
 
   .dropdown-content a:hover {
@@ -85,7 +86,7 @@ body{
   /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid black;
+  border: 1px solid white;
   background-color: black;
   display: inline-block;
 }

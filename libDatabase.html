@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/coding.css">
+        <script src = "./js/theCoding.js"></script>
+    </head>
+<body>
+<p id = "titlePart">My Projects</p>
+<div class="navbar">
+    <div class="dropdown">
+        <button class="dropbtn">JAVA 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="mazeAlg.html">Maze Algorithm</a>
+            <a href="RBTProj.html">Red-Black Tree</a>
+        </div>
+    </div> 
+  <div class="dropdown">
+    <button class="dropbtn">MySQL 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="libDatabase.html">Library Database</a>
+    </div>
+  </div> 
+</div>
+
+<div class = "contain">
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'books')">Books</button>
+        <button class="tablinks" onclick="openTab(event, 'insert')">Insert</button>
+        <button class="tablinks" onclick="openTab(event, 'tables')">Tables</button>
+        <button class="tablinks" onclick="openTab(event, 'execution')">Execution</button>
+    </div>
+</div>
+
+<div id="books" class="tabcontent">
+    <div>
+        <script src="http://gist-it.appspot.com/https://github.com/abhishekhotti/LibraryDatabase/blob/master/src/Books.java"></script>
+    </div>
+</div>
+
+<div id="insert" class="tabcontent">
+    <div class="container">
+            <script src="http://gist-it.appspot.com/https://github.com/abhishekhotti/LibraryDatabase/blob/master/src/Insert.java"></script>
+        </div>
+</div>
+
+<div id="tables" class="tabcontent">
+    <div class="container">
+            <script src="http://gist-it.appspot.com/https://github.com/abhishekhotti/LibraryDatabase/blob/master/src/Tables.java"></script>
+        </div>
+</div>
+
+<div id="execution" class="tabcontent">
+        <div class="container">
+                <script src="http://gist-it.appspot.com/https://github.com/abhishekhotti/LibraryDatabase/blob/master/executionStatements"></script>
+            </div>
+    </div>
+
+</body>
+</html>
