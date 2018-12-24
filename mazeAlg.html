@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/coding.css">
+        <script src = "./js/theCoding.js"></script>
+    </head>
+<body>
+<p id = "titlePart">My Projects</p>
+<div class="navbar">
+    <div class="dropdown">
+        <button class="dropbtn">JAVA 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="mazeAlg.html">Maze Algorithm</a>
+            <a href="RBTProj.html">Red-Black Tree</a>
+        </div>
+    </div> 
+  <div class="dropdown">
+    <button class="dropbtn">MySQL 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#3">Library Database</a>
+    </div>
+  </div> 
+</div>
+
+<div class = "contain">
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'BFS')">BFS Solver</button>
+        <button class="tablinks" onclick="openTab(event, 'DFS')">DFS Solver</button>
+        <button class="tablinks" onclick="openTab(event, 'Maze')">Maze</button>
+        <button class="tablinks" onclick="openTab(event, 'MazeTest')">Maze Tester</button>
+        <button class="tablinks" onclick="openTab(event, 'Vertex')">Vertex</button>
+    </div>
+</div>
+<div id="BFS" class="tabcontent">
+    <div>
+        <script src="http://gist-it.appspot.com/https://github.com/abhishekhotti/SE_146/blob/master/MazeAlgorithm_Proj/src/maze/BFS_Solver.java"></script>
+    </div>
+</div>
+
+<div id="DFS" class="tabcontent">
+    <div class="container">
+            <script src="http://gist-it.appspot.com/https://github.com/abhishekhotti/SE_146/blob/master/MazeAlgorithm_Proj/src/maze/DFS_solver.java"></script>
+        </div>
+</div>
+
+<div id="Maze" class="tabcontent">
+    <div class="container">
+        <script src="http://gist-it.appspot.com/https://github.com/abhishekhotti/SE_146/blob/master/MazeAlgorithm_Proj/src/maze/Maze.java"></script>
+    </div>
+</div>
+
+<div id="MazeTest" class="tabcontent">
+    <div class="container">
+        <script src="http://gist-it.appspot.com/https://github.com/abhishekhotti/SE_146/blob/master/MazeAlgorithm_Proj/src/maze/MazeTester.java"></script>
+    </div>
+</div>
+
+<div id="Vertex" class="tabcontent">
+    <div class="container">
+        <script src="http://gist-it.appspot.com/https://github.com/abhishekhotti/SE_146/blob/master/MazeAlgorithm_Proj/src/maze/Vertex.java"></script>
+    </div>
+</div>
+
+</body>
+</html>
+

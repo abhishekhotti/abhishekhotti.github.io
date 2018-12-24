@@ -36,13 +36,13 @@
           </div>
           <div class="column">
             <form id = "contactForm">
-              <label for="name">Name</label>
+              <label for="name">Name <span style = "color: red">(required)</span></label>
               <input type="text" id="name" name="firstname" placeholder="Your full name is..." required>
-              <label for="email">Email Address</label>
+              <label for="email">Email Address <span style = "color: red">(required)</span></label>
               <input type="email" id="email" name="email" placeholder="Your email is..." required>
-              <label for="location">Location</label>
+              <label for="location">Location <span style = "color: red">(required)</span></label>
               <input type="text" id="location" name="location" placeholder="Where are you located..." required>
-              <label for="subject">Subject</label>
+              <label for="subject">Subject <span style = "color: red">(required)</span></label>
               <textarea id="subject" name="subject" placeholder="Tell me what kind of shoot you were planning..." style="height:170px" required></textarea>
               <button id="submissionButton" type="submit" value="Submit">Submit</button>
             </form>
@@ -59,7 +59,6 @@
         <p style = "background-color: #45a049; text-align: center">Your message has been sent. I will contact you back soon</p>
         <a style = "text-align: center" href = "photography.html"><button style = "background-color: #45a049">Go Home!</button></a>
       </div>
-    
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
