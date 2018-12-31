@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['submissionButton'])){
+    if(isset($_POST['submit'])){
         $email=$_POST['email'];
         $msg = $_POST['subject'];
         $loc = $_POST['location'];
