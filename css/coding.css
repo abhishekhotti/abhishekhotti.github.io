@@ -124,6 +124,7 @@ body{
   color:black;
   padding: 5px 5px;
   border: 0px;
+  font-size: 20px;
 }
 
 #submissionButton:hover{

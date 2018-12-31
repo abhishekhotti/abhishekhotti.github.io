@@ -19,4 +19,6 @@ function openTab(evt, cityName) {
     evt.currentTarget.className += " active";
   }
 
-  
+(function(){
+  $("#loadMe").load("coding.html"); 
+});
