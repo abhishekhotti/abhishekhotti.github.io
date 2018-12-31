@@ -2,6 +2,7 @@
     overflow: hidden;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
   }
 
 #titlePart{
@@ -29,8 +30,8 @@ body{
   }
   
   .dropdown {
-    float: left;
     overflow: hidden;
+    display: inline-block;
   }
   
   .dropdown .dropbtn {
@@ -117,6 +118,23 @@ body{
   color: black;
 }
 
+#submissionButton{
+  width: auto;
+  background-color: #45a049;
+  color:black;
+  padding: 5px 5px;
+  border: 0px;
+}
+
+#submissionButton:hover{
+  width: auto;
+  background-color: white;
+  color: #45a049;
+  cursor: pointer;
+  padding: 5px 5px;
+  border: 0px;
+}
+
 /* Style the tab content */
 .tabcontent {
   display: none;
@@ -125,3 +143,4 @@ body{
   border-top: none;
   color: white;
 }
+
