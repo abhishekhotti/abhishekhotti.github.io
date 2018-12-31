@@ -63,6 +63,9 @@ function openTab(evt, cityName) {
     saveMessage(name, email, location, subject);
 
     document.getElementById('contactForm').reset();
+
+    // When the user clicks the button, open the modal 
+    modal.style.display = "block";
   }
 
   function getInputVal(id)
@@ -84,17 +87,8 @@ function openTab(evt, cityName) {
 // Get the modal
 var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("submissionButton");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("closeMine")[0];
-
-// When the user clicks the button, open the modal 
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
